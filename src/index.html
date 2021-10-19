@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Моя визитка</title>
+</head>
+<body>
+
+	<header class="header">
+		<nav>
+			<div class="header-logo">Сергей Шикин</div>
+			<ul class="header-menu">
+				<li>Обо мне</li>
+				<li>Услуги</li>
+				<li>Кейсы</li>
+				<li>Прайс</li>
+				<li>Отзывы</li>
+				<li>Контакты</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="main">
+		<div class="main-title">
+			<h1>Привет <br> Я Сергей Шикин</h1>
+			<h4>Фулл стек веб-разработчик</h4>
+			<input type="submit" name="main_1" value="Обо мне">
+			<input type="submit" name="main_2" value="Мои работы">
+		</div>
+		<div class="main-img">
+			<img src="#" alt="Здесь должна быть картинка">
+		</div>
+	</div>
+
+	<div class="about-me">
+		<div class="about-me-title">
+			<h2>Обо мне</h2>
+		</div>
+		<div class="about-me-img">
+			<img src="#" alt="Здесь должна быть картинка"> 
+		</div>
+		<div class="about-me-description">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat mollitia necessitatibus ipsam delectus aut minima veritatis. A nam quisquam assumenda deserunt eum natus velit tenetur repellendus, officia optio quibusdam illum laudantium iure fugit id?</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat mollitia necessitatibus ipsam delectus aut minima veritatis. A nam quisquam assumenda deserunt eum natus velit tenetur repellendus, officia optio quibusdam illum laudantium iure fugit id?</p>
+			<input type="submit" name="about-me_1" value="Скачать резюме">
+		</div>
+	</div>
+
+	<div class="skills">
+		<div class="skills-title">
+			<h2>Что я умею</h2>
+		</div>
+		<div class="skills-description">
+			<div class="skills-description_1">
+				<h4 class="skills-description-title">Веб-дизайн</h4>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse suscipit excepturi earum.</p>
+			</div>
+			<div class="skills-description_2">
+				<h4 class="skills-description-title">Разработка</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit illo, eveniet modi, ipsa voluptas aliquam aut.</p>
+			</div>
+			<div class="skills-description_3">
+				<h4 class="skills-description-title">GEO-Оптимизация</h4>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Nobis, aperiam ab laudantium?</p>
+			</div>
+			<div class="skills-description_4">
+				<h4 class="skills-description-title">Маркетинг</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ex omnis cumque ipsum, ut dignissimos accusantium.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="case">
+		<div class="case-title">
+			<h2>Кейсы</h2>
+		</div>
+		<div class="case-description">
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat corporis nam quae quod perferendis, fugiat.</p>
+		</div>
+		<div class="case-img">
+			<img src="#" alt="Здель должно быть переключение моих проектов, но пока я это делать не умею :)">
+		</div>
+		<div class="case-information">
+			<h3>CLIENT:</h3>
+			<p>Какая-то компания</p>
+			<h3>WEBSITE:</h3>
+			<p>http://google.com</p>
+			<h3>Название проекта</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia odit, officiis delectus blanditiis modi repellat labore enim obcaecati tempore veritatis suscipit recusandae ipsum illum libero accusantium aliquam, possimus quis, impedit. Voluptate soluta voluptatum ex voluptates quaerat, corrupti quidem enim pariatur esse laudantium, reprehenderit consequuntur minus natus! Illo esse aliquid mollitia, optio reiciendis inventore nihil quod consequatur quos voluptates et voluptate? Assumenda perspiciatis est quidem.</p>
+		</div>
+		<div class="case-button">
+			<a href="https://www.google.com/" target="_blank">VISIT LIVE SITE</a>
+		</div>
+	</div>
+
+	<!-- Здесь я решил не делать "Расчет стоиомсти" заголовком второго уровня,
+	так как думаю что h2 имеют одинаковый дизайн, и их можно будет в дальнейшем сразу через css сделать под единный стиль, а данный заголовок отличается, поэтому я оставил его так.
+	Правда зачем я тогда присваивал каждому заголовку свой оригинальный класс, но да ладно, очень интересно что вы скажите на это) -->
+	<div class="cost"> 
+		<div class="cost-title">
+			Расчет стоимости
+		</div>
+		<div class="cost-type-site">
+			<p>Тип сайта</p>
+			<select name="list1" id="list">
+				<option value="Opt1">Option 1</option>
+				<option value="Opt2">Option 2</option>
+				<option value="Opt3">Option 3</option>
+				<option value="Opt4">Option 4</option>	
+			</select>
+		</div>
+		<div class="cost-design">
+			<p>Дизайн</p>
+			<select name="list2" id="list">
+				<option value="Opt1">Option 1</option>
+				<option value="Opt2">Option 2</option>
+				<option value="Opt3">Option 3</option>
+				<option value="Opt4">Option 4</option>	
+			</select>
+		</div>
+		<div class="cost-adaptive">
+			<p>Адаптивность</p>
+			<select name="list3" id="list">
+				<option value="Opt1">Option 1</option>
+				<option value="Opt2">Option 2</option>
+				<option value="Opt3">Option 3</option>
+				<option value="Opt4">Option 4</option>	
+			</select>
+		</div>
+		<div class="cost-footer">
+			<p>Сроки</p>
+			<p>Стоимость</p>
+		</div>
+	</div>
+
+	<div class="statistics">
+		<div class="statistics-title">
+			<h2>Немного статистики</h2>
+		</div>
+		<div class="statistics-description">
+			<div class="statistics-description_1">
+				<h3 class="statistics-description-title">120</h4>
+				<p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+			</div>
+			<div class="statistics-description_2">
+				<h3 class="statistics-description-title">4,600</h4>
+				<p>ЧАСОВ РАБОТЫ</p>
+			</div>
+			<div class="statistics-description_3">
+				<h3 class="statistics-description-title">340</h4>
+				<p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+			</div>
+			<div class="statistics-description_4">
+				<h3 class="statistics-description-title">23</h4>
+				<p>НАГРАД ПОЛУЧЕНО</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="comment">
+		<div class="comment-title">
+			<h2>Отзывы</h2>
+		</div>
+		<div class="comment-img">
+			<img src="#" alt="Здесь должна быть картинка">
+		</div>
+		<div class="comment-description">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ad recusandae optio rem, laboriosam necessitatibus voluptatibus iure illum sint qui beatae voluptate vel saepe pariatur eius quos, enim eum perferendis, corrupti?</p>
+			<p><b>Михаил,</b> Ген директор ПАО "Газпром".</p>
+		</div>
+		<div class="comment-scroll">
+			<p>Здесь должны пролистываться отзывы</p>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-title">
+			<h2>Мои контакты</h2>
+		</div>
+		<div class="footer-description">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum labore cupiditate aspernatur quod consequatur nesciunt.</p>
+		</div>
+		<div class="footer-contacts">
+			<p><img src="#" alt="Иконка карты"><br>
+			Адрес</p>
+			<p><img src="#" alt="Иконка почты"><br>
+			Маил</p>
+			<p><img src="#" alt="Иконка телефона"><br>
+			Телефон</p>
+		</div>
+		<div class="footer-form">
+			<p>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</p>
+			<form action="#">
+				<input type="text" name="text_name" placeholder="Имя">
+				<input type="email" name="email" placeholder="Email">
+				<p><textarea name="text" cols="30" rows="10" placeholder="Сообщение"></textarea></p>
+				<p><input type="submit" value="Отправить" name="footer_1"></p>
+			</form>
+		</div>
+		<div class="footer-icon">
+			<p>Здесь должны быть иконки</p>
+		</div>
+		<div class="footer-map">
+			<p>Здесь должна быть карта</p>
+		</div>
+		<div class="footer-footer">
+			<p>Copyright 2021 Андрей Брайн Design by Web</p>
+		</div>
+	</footer>
+
+</body>
+</html>
