@@ -1,80 +1,80 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 
-/*.preloader {*/
-/*    position: fixed;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background-color: #34314c;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    transition: 1s;*/
-/*}*/
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #34314c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
 
-/*.preloader__content {*/
-/*    position: relative;*/
-/*    width: 200px;*/
-/*    height: 200px;*/
-/*}*/
+.preloader__content {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
 
-/*.preloader__first,*/
-/*.preloader__second,*/
-/*.preloader__third {*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    border-radius: 50%;*/
-/*    animation: 1s linear infinite;*/
-/*}*/
+.preloader__first,
+.preloader__second,
+.preloader__third {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: 1s linear infinite;
+}
 
-/*.preloader__first {*/
-/*    border-bottom: 3px solid #ff7473;*/
-/*    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);*/
-/*    animation-name: first;*/
-/*}*/
+.preloader__first {
+    border-bottom: 3px solid #ff7473;
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    animation-name: first;
+}
 
-/*.preloader__second {*/
-/*    border-right: 3px solid #ffc952;*/
-/*    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);*/
-/*    animation-name: second;*/
-/*}*/
+.preloader__second {
+    border-right: 3px solid #ffc952;
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    animation-name: second;
+}
 
-/*.preloader__third {*/
-/*    border-top: 3px solid #47b8e0;*/
-/*    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);*/
-/*    animation-name: third;*/
-/*}*/
+.preloader__third {
+    border-top: 3px solid #47b8e0;
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    animation-name: third;
+}
 
-/*@keyframes first {*/
-/*    0% {*/
-/*        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);*/
-/*    }*/
-/*}*/
+@keyframes first {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
 
-/*@keyframes second {*/
-/*    0% {*/
-/*        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);*/
-/*    }*/
-/*}*/
+@keyframes second {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
 
-/*@keyframes third {*/
-/*    0% {*/
-/*        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);*/
-/*    }*/
-/*}*/
+@keyframes third {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
 
-/*#preloader.hide-preloader {*/
-/*    display: none;*/
-/*}*/
+#preloader.hide-preloader {
+    display: none;
+}
 body {
     font-family: Arial, sans-serif;
     width: 100%;
@@ -86,6 +86,7 @@ nav {
     height: 60px;
     background: #344051;
     position: fixed;
+    z-index: 999;
 }
 
 h2 {
@@ -336,7 +337,7 @@ h2 {
     float: left;
     width: 100%;
     height: 522px;
-    background: url(../img/картинка_фона.png) fixed;
+    background: url(../img/картинка_фона.png);
 }
 
 .skills-title {
@@ -621,8 +622,7 @@ h2 {
     float: left;
     width: 100%;
     height: 499px;
-    background-attachment: fixed;
-    background: url(../img/фон_обомне.png);
+    background: url(../img/фон_обомне.png) fixed;
 }
 
 .statistics-title {
