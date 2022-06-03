@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     transition: 1s;
+    z-index: 1000;
 }
 
 .preloader__content {
@@ -75,6 +76,7 @@
 #preloader.hide-preloader {
     display: none;
 }
+
 body {
     font-family: Arial, sans-serif;
     width: 100%;
@@ -99,27 +101,34 @@ h2 {
 
 .header-logo {
     float: left;
-    padding-left: 388px;
+    /*padding-left: 388px;*/
     color: #fff;
     line-height: 60px;
     font-size: 26px;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
+}
 
+.header-logo a:visited {
+    color: white;
+}
 
+.header-logo a:hover {
+    color: #f79006;
+    transform: scale(1.05);
 }
 
 .header-menu {
     float: left;
-    padding-left: 430px;
+    /*padding-left: 430px;*/
 }
 
 .header-menu li {
     float: left;
     padding-right: 40px;
     line-height: 60px;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
@@ -150,6 +159,7 @@ h2 {
 }
 
 .header-menu li a {
+    text-decoration: none;
     transition: all 0.1s;
     color: white;
     transform: scale(1);
@@ -165,16 +175,24 @@ h2 {
     transform: scale(1.05);
 }
 
+.btn-navigation {
+    color: white;
+}
+
+.btn-navigation:visited {
+    color: white;
+}
+
 .main {
     width: 100%;
     height: 100%;
-    background: url(../img/Парень.png) 90% 100%/auto 85% no-repeat, url(../img/фон.jpg) center/cover no-repeat;
+    background: url(../img/Моник.png) 90% 100%/auto 85% no-repeat, url(../img/фон.jpg) center/cover no-repeat;;
 }
 
 .main-title {
+    margin-top: 100px;
     float: left;
-    margin-top: 432px;
-    margin-left: 404px;
+    width: 100%;
     text-align: center;
     -webkit-animation: titlemove 1.5s ease;
     -o-animation: titlemove 1.5s ease;
@@ -184,7 +202,7 @@ h2 {
 
 .main-title h1 {
     color: #2c384a;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
 }
 
@@ -249,7 +267,33 @@ h2 {
     }
     to {
         opacity: 1;
-        margin-left: 404px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .main-title h1, .main-title h4, .main-title input {
+        color: white;
+        position: relative;
+        z-index: 90;
+    }
+
+    .main-title input {
+        border: 2px solid white;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .main::after {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -257,7 +301,7 @@ h2 {
     float: left;
     width: 100%;
     height: 716px;
-    box-shadow: 0px -10px 12px #8080808f;
+    box-shadow: 0 -10px 12px #8080808f;
     background-color: #fcfdfd;
 
 }
@@ -395,11 +439,10 @@ h2 {
 }
 
 .case-photo {
-    margin: 0 auto;
     width: 1168px;
     height: 590px;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
 }
 
 .case-project {
@@ -448,7 +491,7 @@ h2 {
     text-align: center;
 }
 
-.btn {
+.btn10 {
     box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -466,7 +509,6 @@ h2 {
     -ms-flex-item-align: center;
     align-self: center;
     font-size: 16px;
-    font-weight: 400;
     line-height: 1;
     padding: 0.8em 2.2em;
     text-decoration: none;
@@ -475,7 +517,7 @@ h2 {
     font-weight: 700;
 }
 
-.btn:hover, .btn:focus {
+.btn10:hover, .btn10:focus {
     color: #45c5ba;
     outline: 0;
 }
@@ -844,7 +886,6 @@ svg {
 }
 
 .footer {
-    float: left;
     display: flex;
     justify-content: center;
     width: 100%;

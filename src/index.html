@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Моя визитка</title>
@@ -17,24 +18,58 @@
 </div>
 <header class="header">
     <nav>
-        <div class="header-logo">Сергей Шикин</div>
-        <ul class="header-menu">
-            <li><a href="#">Обо мне</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Кейсы</a></li>
-            <li><a href="#">Прайс</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-2 col-lg-3 col-7">
+                    <div class="header-logo"><a href="#">Сергей Шикин</a></div>
+                </div>
+                <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                    <div class="header-menu">
+                        <ul>
+                            <li><a href="#">Обо мне</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Кейсы</a></li>
+                            <li><a href="#">Прайс</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                    <div class="dropdown">
+                        <a class="btn btn-navigation btn-outline-secondary dropdown-toggle" href="#" role="button"
+                           id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Навигация
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                            <li><a class="dropdown-item" href="#">Услуги</a></li>
+                            <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                            <li><a class="dropdown-item" href="#">Прайс</a></li>
+                            <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                            <li><a class="dropdown-item" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
 </header>
 
 <main class="main">
-    <div class="main-title">
-        <h1>Привет <br> Я Сергей Шикин</h1>
-        <h4>Full-stack developer</h4>
-        <input type="button" name="main_1" value="Обо мне">
-        <input type="button" name="main_2" value="Мои работы">
+    <div class="container h-100">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-6">
+                <div class="main-title">
+                    <h1>Привет <br> Я Сергей Шикин</h1>
+                    <h4>Full-stack web developer</h4>
+                    <input type="button" name="main_1" value="Обо мне">
+                    <input type="button" name="main_2" value="Мои работы">
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
@@ -98,7 +133,7 @@
             fugiat.</p>
     </div>
     <div class="case-photo">
-        <img src="img/фотка.png" class="case-img" alt="Картинка">
+        <img src="img/фотка.png" class="img-fluid" alt="Картинка">
     </div>
     <div class="case-project">
         <div class="case-information">
@@ -119,7 +154,7 @@
             </div>
         </div>
         <div class="case-button">
-            <a href="https://www.google.com/" class="btn visit" target="_blank">visit live site</a>
+            <a href="https://www.google.com/" class="btn10 visit" target="_blank">visit live site</a>
         </div>
     </div>
 </section>
@@ -290,5 +325,6 @@
     <p>Copyright @2022 Сергей Шикин Design by Web</p>
 </footer>
 <script src="js/script.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
