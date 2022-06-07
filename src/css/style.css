@@ -302,12 +302,11 @@ h2 {
 }
 
 .about-me {
-    float: left;
+    /*float: left;*/
     width: 100%;
-    height: 716px;
     box-shadow: 0 -10px 12px #8080808f;
     background-color: #fcfdfd;
-
+    margin-bottom: 60px;
 }
 
 .about-me-title {
@@ -340,8 +339,8 @@ h2 {
 }
 
 .about-me-description {
-    width: 730px;
-    margin: 0 auto;
+    padding-top: 20px;
+
 }
 
 .about-me-description_1 {
@@ -354,8 +353,7 @@ h2 {
 
 .about-me-description input {
     display: block;
-    background: url(../img/иконка_кнопки.png) no-repeat;
-    background-position: left 8px center;
+    background: url(../img/иконка_кнопки.png) no-repeat left 8px center;
     height: 34px;
     font-size: 14px;
     color: #6d7682;
@@ -382,10 +380,10 @@ h2 {
 }
 
 .skills {
+    display: flex;
     float: left;
     width: 100%;
-    height: 522px;
-    background: url(../img/картинка_фона.png);
+    background: url(../img/картинка_фона.png) fixed;
 }
 
 .skills-title {
@@ -397,6 +395,7 @@ h2 {
     margin-top: 80px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skills-description h4 {
@@ -416,16 +415,29 @@ h2 {
     height: 154px;
     display: inline-block;
     text-align: center;
+    align-items: center;
+    margin-bottom: 80px;
 }
 
 .skills-description_:not(:last-child) {
     margin-right: 82px;
 }
 
+@media (max-width: 1200px) {
+    .skills-description_:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .skills-description_:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
 .case {
     float: left;
     width: 100%;
-    height: 1142px;
     background: #fcfdfd;
 }
 
@@ -443,15 +455,13 @@ h2 {
 }
 
 .case-photo {
-    width: 1168px;
-    height: 590px;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     margin: 0 auto 40px;
 }
 
 .case-project {
-    width: 1168px;
-    height: 308px;
     margin: 0 auto;
 }
 
@@ -621,6 +631,10 @@ h2 {
     position: relative;
 }
 
+.cost-option option {
+    width: 300px;
+}
+
 .select-wrapper::before {
     content: "";
     position: absolute;
@@ -635,25 +649,21 @@ h2 {
 }
 
 .cost-footer {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
-    height: 62px;
     width: 100%;
     font-weight: 600;
 }
 
 .cost-footer_text {
-    height: 62px;
-    display: inline-block;
     font-size: 20px;
     color: #1c2534;
 }
 
 .cost-footer_digits {
-    height: 62px;
-    display: inline-block;
     font-size: 26px;
     color: #1c2534;
-    float: right;
 }
 
 .cost-footer_text p:not(:last-child) {
@@ -667,7 +677,7 @@ h2 {
 .statistics {
     float: left;
     width: 100%;
-    height: 499px;
+    /*height: 499px;*/
     background: url(../img/фон_обомне.png) fixed;
 }
 
@@ -679,6 +689,7 @@ h2 {
     margin-top: 86px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .statistics-description h3 {
@@ -700,16 +711,28 @@ h2 {
     width: 210px;
     height: 160px;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .statistics-description_:not(:last-child) {
-    margin-right: 100px;
+    margin-right: 82px;
+}
+
+@media (max-width: 1200px) {
+    .statistics-description_:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .statistics-description_:not(:last-child) {
+        margin-right: 0;
+    }
 }
 
 .comment {
     float: left;
     width: 100%;
-    height: 590px;
 }
 
 .comment-title {
@@ -729,7 +752,7 @@ h2 {
 }
 
 .comment-description {
-    width: 690px;
+    width: 100%;
     text-align: center;
     color: #1c2534;
     margin: 0 auto 50px auto;
@@ -739,6 +762,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 82px;
 }
 
 .comment-scroll img:not(:last-child) {
@@ -749,8 +773,8 @@ h2 {
     color: #fff;
     float: left;
     width: 100%;
-    height: 806px;
     background: url(../img/Фон_футер.png) no-repeat;
+    background-size: cover;
 }
 
 .contacts-container {
@@ -758,8 +782,16 @@ h2 {
     margin: 0 auto;
 }
 
+@media (max-width: 734px) {
+    .contacts-container {
+        width: auto;
+    }
+}
+
 .contacts-title {
     text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
@@ -767,9 +799,10 @@ h2 {
     margin: 104px 0 30px 0;
 }
 
-
 .contacts-description {
     margin: 30px 0 42px 0;
+    display: flex;
+    justify-content: center;
     font-size: 16px;
     text-align: center;
 }
@@ -777,6 +810,7 @@ h2 {
 .contacts-contacts {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contacts-contacts_ {
@@ -791,12 +825,24 @@ h2 {
     margin-right: 40px;
 }
 
+@media (max-width: 768px) {
+    .contacts-contacts_:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 490px) {
+    .contacts-contacts_:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
 .contacts-icon {
     margin-bottom: 10px;
 }
 
 .contacts-form {
-    width: 734px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -809,24 +855,19 @@ h2 {
 
 .contacts-forms {
     width: 100%;
-    height: 34px;
+    /*height: 34px;*/
     margin-bottom: 14px;
+    display: block;
+}
+
+.contacts-forms label{
+    width: 100%;
 }
 
 .form-name {
-    float: left;
+    display: block;
+    width: 100%;
     height: 34px;
-    width: 352px;
-    background: #d2d6dc;
-    align-items: center;
-    font-size: 15px;
-    padding-left: 10px;
-}
-
-.form-name1 {
-    float: right;
-    height: 34px;
-    width: 352px;
     background: #d2d6dc;
     align-items: center;
     font-size: 15px;
@@ -834,8 +875,14 @@ h2 {
 }
 
 .contacts-textarea {
+    width: 100%;
     color: #5d5d5e;
     margin-bottom: 30px;
+}
+
+.contacts-textarea label{
+    display: block;
+    width: 100%;
 }
 
 .textarea {
@@ -887,6 +934,7 @@ svg {
 .contacts-button {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 .footer {
