@@ -461,9 +461,9 @@ h2 {
     margin: 0 auto 40px;
 }
 
-.case-project {
-    margin: 0 auto;
-}
+/*.case-project {*/
+/*    margin: 0 auto;*/
+/*}*/
 
 .case-project h3 {
     font-size: 24px;
@@ -478,31 +478,43 @@ h2 {
 }
 
 .case-information {
-    width: 1168px;
-    height: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .case-cl_and_web {
-    width: 284px;
-    height: 102px;
     display: inline-block;
+    margin-right: 20%;
 }
 
 .case-name_project {
-    width: 875px;
-    height: 170px;
     display: inline-block;
 }
 
 .case-button {
-    /*width: 230px;
-    height: 44px;*/
+    margin-top: 3%;
     display: flex;
     justify-content: start;
-    /*background-color: #45c5ba;
-    border-radius: 5px*/;
     line-height: 44px;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    .case-information {
+        display: block;
+        width: 100%;
+    }
+
+    .case-cl_and_web {
+        display: block;
+        width: 100%;
+    }
+
+    .case-name_project {
+        display: block;
+        width: 100%;
+    }
 }
 
 .btn10 {
