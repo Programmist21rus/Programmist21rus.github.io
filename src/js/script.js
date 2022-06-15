@@ -9,7 +9,7 @@ $(document).ready(function () {
         let scrollDistance = $(window).scrollTop();
 
         $('.section').each((i, el) => {
-            if ($(el).offset().top() - $('nav').outerHeight() <= scrollDistance) {
+            if ($(el).offset().top - $('nav').outerHeight() <= scrollDistance) {
                 $('nav a').each((i, el) => {
                     if ($(el).hasClass('active')) {
                         $(el).removeClass('active');
@@ -25,5 +25,5 @@ $(document).ready(function () {
 
 $("a[href^='#']").click(function () {
     let valHref = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(valHref).offset().top() - 50 + "px"});
+    $("html, body").animate({scrollTop: $(valHref).offset().top - 50 + "px"});
 });
