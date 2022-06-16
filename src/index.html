@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_comment.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Моя визитка</title>
 </head>
@@ -16,7 +22,7 @@
         <div class="preloader__third"></div>
     </div>
 </div>
-<header class="header section" id="me">
+<header class="header" id="me">
     <nav>
         <div class="container">
             <div class="row">
@@ -28,8 +34,9 @@
                         <ul>
                             <li class="nav-item"><a href="#about-me" class="nav-link active">Обо мне</a></li>
                             <li class="nav-item"><a href="#skills" class="nav-link">Услуги</a></li>
-                            <li class="nav-item"><a href="#case" class="nav-link">Кейсы</a></li>
+<!--                            <li class="nav-item"><a href="#case" class="nav-link">Кейсы</a></li>-->
                             <li class="nav-item"><a href="#price" class="nav-link">Прайс</a></li>
+                            <li class="nav-item"><a href="#statistics" class="nav-link">Статистика</a></li>
                             <li class="nav-item"><a href="#comment" class="nav-link">Отзывы</a></li>
                             <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
                         </ul>
@@ -44,12 +51,13 @@
                         </a>
 
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Обо мне</a></li>
-                            <li><a class="dropdown-item" href="#">Услуги</a></li>
-                            <li><a class="dropdown-item" href="#">Кейсы</a></li>
-                            <li><a class="dropdown-item" href="#">Прайс</a></li>
-                            <li><a class="dropdown-item" href="#">Отзывы</a></li>
-                            <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            <li><a class="dropdown-item" href="#about-me">Обо мне</a></li>
+                            <li><a class="dropdown-item" href="#skills">Услуги</a></li>
+<!--                            <li><a class="dropdown-item" href="#case">Кейсы</a></li>-->
+                            <li><a class="dropdown-item" href="#price">Прайс</a></li>
+                            <li><a class="dropdown-item" href="#statistics">Статистика</a></li>
+                            <li><a class="dropdown-item" href="#comment">Отзывы</a></li>
+                            <li><a class="dropdown-item" href="#contacts">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -58,15 +66,15 @@
     </nav>
 </header>
 
-<main class="main section">
+<main class="main">
     <div class="container h-100">
         <div class="row align-items-center h-100">
             <div class="col-lg-6">
                 <div class="main-title">
                     <h1>Привет <br> Я Сергей Шикин</h1>
                     <h4>Full-stack web developer</h4>
-                    <input type="button" name="main_1" value="Обо мне">
-                    <input type="button" name="main_2" value="Мои работы">
+                    <a href="#about-me">Обо мне</a>
+<!--                    <a href="#case">Мои работы</a>-->
                 </div>
             </div>
         </div>
@@ -83,13 +91,11 @@
             <img src="img/Круглая.jpg" class="about-me-img" alt="Здесь должна быть картинка">
         </div>
         <div class="about-me-description">
-            <p class="about-me-description_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat
-                mollitia necessitatibus ipsam delectus aut minima veritatis. A nam quisquam assumenda deserunt eum natus
-                velit tenetur repellendus, officia optio quibusdam illum laudantium iure fugit id?</p>
-            <p class="about-me-description_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat
-                mollitia necessitatibus ipsam delectus aut minima veritatis. A nam quisquam assumenda deserunt eum natus
-                velit tenetur repellendus, officia optio quibusdam illum laudantium iure fugit id?</p>
-            <input type="submit" name="about-me_1" value="   Скачать резюме">
+            <p class="about-me-description_1">Всем привет, меня зовут Шикин Сергей, я начинающий веб-разработчик.</p>
+            <p class="about-me-description_2">
+                Занимаюсь созданием и продвижением сайтов различной сложности.
+                Если вы ищете талантливого, молодого, перспективного разработчика, имеющего огромное желание развиваться в IT-сфере, вам следует обратиться ко мне.</p>
+<!--            <input type="submit" name="about-me_1" value="   Скачать резюме">-->
         </div>
     </div>
 </section>
@@ -106,64 +112,63 @@
                 <div class="skills-description_">
                     <img src="img/ноут.png" alt="Здесь должна быть картинка">
                     <h4 class="skills-description-title">Веб-дизайн</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse suscipit excepturi earum.</p>
+                    <p>Разработка и написание качественного кода для вашего сайта, учитывая ваши пожелания и идеи.</p>
                 </div>
                 <div class="skills-description_">
                     <img src="img/знак.png" alt="Здесь должна быть картинка">
                     <h4 class="skills-description-title">Разработка</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit illo, eveniet modi, ipsa voluptas
-                        aliquam aut.</p>
+                    <p>Создание полностью адаптивного сайта с сохранением деталей под любые устройства.</p>
                 </div>
                 <div class="skills-description_">
                     <img src="img/ракета.png" alt="Здесь должна быть картинка">
                     <h4 class="skills-description-title">GEO-Оптимизация</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Nobis, aperiam ab laudantium?</p>
+                    <p>Оптимизация для компьютеров и мобильных устройств, которая в значительной степени ускорит загрузку вашего сайта.</p>
                 </div>
                 <div class="skills-description_">
                     <img src="img/граммофон.png" alt="Здесь должна быть картинка">
                     <h4 class="skills-description-title">Маркетинг</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Ex omnis cumque ipsum, ut dignissimos
-                        accusantium.</p>
+                    <p>Интернет маркетинг - это действия, направленные на продвижение товаров и услуг в интернеге. Основная цель интернет маркетинга - превратить посетителей сайта в покупателей и увеличить прибыль.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="case section" id="case">
-    <div class="container h-100">
-        <div class="case-title">
-            <h2>Кейсы</h2>
-        </div>
-        <div class="underline"></div>
-        <div class="case-description">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat corporis nam quae quod perferendis,
-                fugiat.</p>
-        </div>
-        <div class="case-photo">
-            <img src="img/фотка.png" class="img-fluid" alt="Картинка">
-        </div>
-        <div class="case-project">
-            <div class="case-information">
-                <div class="case-cl_and_web">
-                    <h3>CLIENT:</h3>
-                    <p>Какая-то компания</p>
-                    <h3>WEBSITE:</h3>
-                    <p>http://google.com</p>
-                </div>
-                <div class="case-name_project">
-                    <h3>Название проекта</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia odit, officiis delectus
-                        blanditiis modi repellat labore enim obcaecati tempore veritatis suscipit recusandae ipsum illum
-                        libero accusantium aliquam, possimus quis, impedit.</p>
-                </div>
-            </div>
-            <div class="case-button">
-                <a href="https://www.google.com/" class="btn10 visit" target="_blank">visit live site</a>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section class="case section" id="case">-->
+<!--    <div class="container h-100">-->
+<!--        <div class="case-title">-->
+<!--            <h2>Кейсы</h2>-->
+<!--        </div>-->
+<!--        <div class="underline"></div>-->
+<!--        <div class="case-description">-->
+<!--            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat corporis nam quae quod perferendis,-->
+<!--                fugiat.</p>-->
+<!--        </div>-->
+<!--        <div class="case-photo">-->
+<!--            <img src="img/фотка.png" class="img-fluid" alt="Картинка">-->
+<!--        </div>-->
+<!--        <div class="case-project">-->
+<!--            <div class="case-information">-->
+<!--                <div class="case-cl_and_web">-->
+<!--                    <h3>CLIENT:</h3>-->
+<!--                    <p>Какая-то компания</p>-->
+<!--                    <h3>WEBSITE:</h3>-->
+<!--                    <p>http://google.com</p>-->
+<!--                </div>-->
+<!--                <div class="case-name_project">-->
+<!--                    <h3>Название проекта</h3>-->
+<!--                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia odit, officiis delectus-->
+<!--                        blanditiis modi repellat labore enim obcaecati tempore veritatis suscipit recusandae ipsum illum-->
+<!--                        libero accusantium aliquam, possimus quis, impedit.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="case-button">-->
+<!--                <a href="https://www.google.com/" class="btn10 visit" target="_blank">visit live site</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
 
 <!-- Здесь я решил не делать "Расчет стоиомсти" заголовком второго уровня,
 так как думаю что h2 имеют одинаковый дизайн, и их можно будет в дальнейшем сразу через css сделать под единный стиль, а данный заголовок отличается, поэтому я оставил его так.
@@ -177,33 +182,33 @@
             <div class="cost-type">
                 <p class="cost-title_3">Тип сайта</p>
                 <div class="select-wrapper">
-                    <select name="list1" class="cost-option" id="list1">
+                    <label for="list1"></label><select name="list1" class="cost-option" id="list1">
                         <option value selected disabled>Выберите пункт...</option>
-                        <option value="Opt2">Option 1</option>
-                        <option value="Opt3">Option 2</option>
-                        <option value="Opt4">Option 3</option>
+                        <option value="Opt1">Сайт-визитка</option>
+                        <option value="Opt2">Landing</option>
+                        <option value="Opt3">Корпоративный</option>
                     </select>
                 </div>
             </div>
             <div class="cost-type">
                 <p class="cost-title_3">Дизайн</p>
                 <div class="select-wrapper">
-                    <select name="list2" class="cost-option" id="list2">
+                    <label for="list2"></label><select name="list2" class="cost-option" id="list2">
                         <option value selected disabled>Выберите пункт...</option>
-                        <option value="Opt2">Option 1</option>
-                        <option value="Opt3">Option 2</option>
-                        <option value="Opt4">Option 3</option>
+                        <option value="Opt1">Шаблон</option>
+                        <option value="Opt2">Макет</option>
+                        <option value="Opt3">Разработка</option>
                     </select>
                 </div>
             </div>
             <div class="cost-type">
                 <p class="cost-title_3">Адаптивность</p>
                 <div class="select-wrapper">
-                    <select name="list3" class="cost-option" id="list3">
+                    <label for="list3"></label><select name="list3" class="cost-option" id="list3">
                         <option value selected disabled>Выберите пункт...</option>
-                        <option value="Opt2">Option 1</option>
-                        <option value="Opt3">Option 2</option>
-                        <option value="Opt4">Option 3</option>
+                        <option value="Opt1">Pixel Perfect</option>
+                        <option value="Opt2">Отзывчивый</option>
+                        <option value="Opt3">Адаптивный</option>
                     </select>
                 </div>
             </div>
@@ -214,14 +219,17 @@
                 <p>Стоимость</p>
             </div>
             <div class="cost-footer_digits">
-                <p>0</p>
-                <p>0</p>
+                <p id="day">0</p>
+                <p id="cost">0</p>
             </div>
+        </div>
+        <div class="cost-button">
+            <button onclick="calculate()" class="btn10 visit">Рассчитать</button>
         </div>
     </div>
 </section>
 
-<section class="statistics section">
+<section class="statistics section" id="statistics">
     <div class="container h-100">
         <div class="statistics-title">
             <h2>Немного статистики</h2>
@@ -258,22 +266,52 @@
             <h2>Отзывы</h2>
         </div>
         <div class="underline"></div>
-        <div class="comment-img">
-            <img src="img/мужик.png" alt="Здесь должна быть картинка">
-        </div>
-        <div class="comment-description">
-            <div class="comment-text">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis ipsam laboriosam earum, voluptatem
-                    molestias nesciunt!</p>
+<!--        <div class="comment-img">-->
+<!--            <img src="img/мужик.png" alt="Здесь должна быть картинка">-->
+<!--        </div>-->
+<!--        <div class="comment-description">-->
+<!--            <div class="comment-text">-->
+<!--                <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Blanditiis ipsam laboriosam earum, voluptatem-->
+<!--                    molestias nesciunt!</p>-->
+<!--            </div>-->
+<!--            <div class="comment-people">-->
+<!--                <p><b>Михаил,</b> Ген директор ПАО "Газпром".</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="comment-scroll">-->
+<!--            <img src="img/Оранж.png" alt="">-->
+<!--            <img src="img/Оранж_копия.png" alt="Здесь должны пролистываться отзывы">-->
+<!--            <img src="img/Оранж_копия2.png" alt="">-->
+<!--        </div>-->
+        <div id="testimonials">
+            <div class="containerr">
+                <div class="block-one-example">
+                    <div id="customNav" class="owl-my-nav"></div>
+                    <div class="owl-carousel block-items">
+                        <div class="item">
+                            <div class="inner-testimonial">
+                                <img src="img/client1.png" class="full-opacity" alt="Клиент 1">
+                                <h3>Иван, Москва</h3>
+                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner-testimonial">
+                                <img src="img/client2.png" class="full-opacity" alt="Клиент 2">
+                                <h3>Светлана, Екатеринбург</h3>
+                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner-testimonial">
+                                <img src="img/client3.png" class="full-opacity" alt="Клиент 3">
+                                <h3>Александр, Ярославль</h3>
+                                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .block-one-example -->
             </div>
-            <div class="comment-people">
-                <p><b>Михаил,</b> Ген директор ПАО "Газпром".</p>
-            </div>
-        </div>
-        <div class="comment-scroll">
-            <img src="img/Оранж.png" alt="">
-            <img src="img/Оранж_копия.png" alt="Здесь должны пролистываться отзывы">
-            <img src="img/Оранж_копия2.png" alt="">
         </div>
     </div>
 </section>
@@ -286,8 +324,7 @@
             </div>
             <div class="underline"></div>
             <div class="contacts-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum labore cupiditate aspernatur quod
-                    consequatur nesciunt.</p>
+                <p>Здесь вы можете связаться со мной или оставить свою заявку.</p>
             </div>
             <div class="contacts-contacts">
                 <div class="contacts-contacts_">
@@ -346,6 +383,9 @@
 </footer>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
 <script src="js/script.js"></script>
 <!--<script src="js/calculator.js"></script>-->
 </body>
